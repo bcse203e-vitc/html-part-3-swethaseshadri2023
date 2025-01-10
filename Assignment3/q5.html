@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Report</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    .top-1 {
+      background-color: #ffd700; /* Gold for 1st place */
+      font-weight: bold;
+    }
+    .top-2 {
+      background-color: #c0c0c0; /* Silver for 2nd place */
+      font-weight: bold;
+    }
+    .top-3 {
+      background-color: #cd7f32; /* Bronze for 3rd place */
+      font-weight: bold;
+    }
+    tfoot td {
+      font-weight: bold;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Grade Report</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Student ID</th>
+        <th>Name</th>
+        <th>Math</th>
+        <th>Science</th>
+        <th>English</th>
+        <th>Total Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="top-1">
+        <td>101</td>
+        <td>Jane Doe</td>
+        <td>95</td>
+        <td>92</td>
+        <td>98</td>
+        <td rowspan="1">285</td>
+      </tr>
+      <tr class="top-2">
+        <td>102</td>
+        <td>John Smith</td>
+        <td>90</td>
+        <td>88</td>
+        <td>95</td>
+        <td rowspan="1">273</td>
+      </tr>
+      <tr class="top-3">
+        <td>103</td>
+        <td>Emily Davis</td>
+        <td>88</td>
+        <td>91</td>
+        <td>85</td>
+        <td rowspan="1">264</td>
+      </tr>
+      <tr>
+        <td>104</td>
+        <td>Michael Brown</td>
+        <td>80</td>
+        <td>84</td>
+        <td>82</td>
+        <td rowspan="1">246</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">Class Average</td>
+        <td>88.25</td>
+        <td>88.75</td>
+        <td>90.0</td>
+        <td>-</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

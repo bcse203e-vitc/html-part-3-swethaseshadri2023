@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Report</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    .highlight {
+      background-color: #d1e7dd; /* Highlight for highest sales region */
+      font-weight: bold;
+    }
+    tfoot td {
+      font-weight: bold;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sales Report</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Region</th>
+        <th>Salesperson</th>
+        <th>Product</th>
+        <th>Quantity Sold</th>
+        <th>Unit Price</th>
+        <th>Total Sales</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="highlight">
+        <td>North</td>
+        <td>Jane Doe</td>
+        <td>Laptop</td>
+        <td>50</td>
+        <td>$800</td>
+        <td>$40,000</td>
+      </tr>
+      <tr>
+        <td>South</td>
+        <td>John Smith</td>
+        <td>Phone</td>
+        <td>100</td>
+        <td>$500</td>
+        <td>$50,000</td>
+      </tr>
+      <tr>
+        <td>East</td>
+        <td>Emily Davis</td>
+        <td>Tablet</td>
+        <td>30</td>
+        <td>$300</td>
+        <td>$9,000</td>
+      </tr>
+      <tr>
+        <td>West</td>
+        <td>Michael Brown</td>
+        <td>Monitor</td>
+        <td>20</td>
+        <td>$200</td>
+        <td>$4,000</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="5">Grand Total</td>
+        <td>$103,000</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

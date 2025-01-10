@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Schedule</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    .nested-table {
+      width: 100%;
+      border: none;
+      margin: 0;
+    }
+    .nested-table th, .nested-table td {
+      border: none;
+      padding: 5px;
+      text-align: left;
+    }
+    .theoretical {
+      background-color: #e0f7fa; /* Light blue for theoretical exams */
+    }
+    .practical {
+      background-color: #fff3e0; /* Light orange for practical exams */
+    }
+    tfoot td {
+      font-weight: bold;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exam Schedule</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Morning (9:00 AM - 12:00 PM)</th>
+        <th>Afternoon (2:00 PM - 5:00 PM)</th>
+        <th>Total Exams</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2025-01-10</td>
+        <td>
+          <table class="nested-table">
+            <tr class="theoretical">
+              <td>Math</td>
+              <td>3h</td>
+            </tr>
+            <tr class="practical">
+              <td>Physics Lab</td>
+              <td>2h</td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <table class="nested-table">
+            <tr class="theoretical">
+              <td>English</td>
+              <td>3h</td>
+            </tr>
+          </table>
+        </td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>2025-01-11</td>
+        <td>
+          <table class="nested-table">
+            <tr class="practical">
+              <td>Chemistry Lab</td>
+              <td>2h</td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <table class="nested-table">
+            <tr class="theoretical">
+              <td>History</td>
+              <td>3h</td>
+            </tr>
+            <tr class="practical">
+              <td>Computer Lab</td>
+              <td>2h</td>
+            </tr>
+          </table>
+        </td>
+        <td>3</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Grand Total Exams</td>
+        <td>6</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
