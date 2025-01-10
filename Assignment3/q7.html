@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conference Timetable</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    .keynote {
+      background-color: #ffeeba; /* Light yellow for keynotes */
+    }
+    .workshop {
+      background-color: #d1ecf1; /* Light blue for workshops */
+    }
+    .panel {
+      background-color: #f8d7da; /* Light red for panel discussions */
+    }
+    .legend {
+      margin-top: 20px;
+    }
+    .legend div {
+      display: inline-block;
+      padding: 5px 10px;
+      margin-right: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .legend .keynote { background-color: #ffeeba; }
+    .legend .workshop { background-color: #d1ecf1; }
+    .legend .panel { background-color: #f8d7da; }
+  </style>
+</head>
+<body>
+  <h1>Conference Timetable</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Room A</th>
+        <th>Room B</th>
+        <th>Room C</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>9:00 AM - 10:00 AM</td>
+        <td class="keynote" colspan="3" title="Speaker: Dr. Jane Smith | Opening Keynote on Future Technologies">
+          Opening Keynote
+        </td>
+      </tr>
+      <tr>
+        <td>10:15 AM - 11:15 AM</td>
+        <td class="workshop" rowspan="2" title="Speaker: John Doe | Hands-on Workshop on AI Tools">
+          AI Workshop
+        </td>
+        <td class="panel" title="Moderator: Emily Davis | Panel on Sustainability in Tech">
+          Sustainability Panel
+        </td>
+        <td class="workshop" title="Speaker: Michael Brown | Workshop on Cloud Computing">
+          Cloud Workshop
+        </td>
+      </tr>
+      <tr>
+        <td>11:30 AM - 12:30 PM</td>
+        <td class="workshop" title="Speaker: Sarah Lee | Workshop on Blockchain Basics">
+          Blockchain Workshop
+        </td>
+        <td class="panel" title="Moderator: Anna Johnson | Panel on Diversity in Tech">
+          Diversity Panel
+        </td>
+      </tr>
+      <tr>
+        <td>1:30 PM - 2:30 PM</td>
+        <td class="keynote" colspan="3" title="Speaker: Dr. Mark Wilson | Closing Keynote on Innovation">
+          Closing Keynote
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="legend">
+    <h2>Legend</h2>
+    <div class="keynote">Keynote</div>
+    <div class="workshop">Workshop</div>
+    <div class="panel">Panel Discussion</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Chart</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .highlight {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Company Organization Chart</h1>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Department Name</th>
+                <th colspan="2">Manager</th>
+                <th rowspan="2">Number of Employees</th>
+                <th rowspan="2">Budget (USD)</th>
+                <th rowspan="2">Budget %</th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- HR Department -->
+            <tr>
+                <td rowspan="2">HR</td>
+                <td>Jane Doe</td>
+                <td>jane.doe@company.com</td>
+                <td rowspan="2">20</td>
+                <td rowspan="2">$150,000</td>
+                <td rowspan="2">15%</td>
+            </tr>
+            <tr>
+                <td>John Smith</td>
+                <td>john.smith@company.com</td>
+            </tr>
+            <!-- Engineering Department -->
+            <tr>
+                <td rowspan="3">Engineering</td>
+                <td>Emily Clark</td>
+                <td>emily.clark@company.com</td>
+                <td rowspan="3">50</td>
+                <td rowspan="3">$400,000</td>
+                <td rowspan="3">40%</td>
+            </tr>
+            <tr>
+                <td>Michael Brown</td>
+                <td>michael.brown@company.com</td>
+            </tr>
+            <tr>
+                <td>Lisa White</td>
+                <td>lisa.white@company.com</td>
+            </tr>
+            <!-- Marketing Department -->
+            <tr>
+                <td>Marketing</td>
+                <td>Anna Green</td>
+                <td>anna.green@company.com</td>
+                <td>15</td>
+                <td>$200,000</td>
+                <td>20%</td>
+            </tr>
+            <!-- Sales Department -->
+            <tr>
+                <td>Sales</td>
+                <td>Paul Black</td>
+                <td>paul.black@company.com</td>
+                <td>10</td>
+                <td>$150,000</td>
+                <td>15%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">Total</th>
+                <th>95</th>
+                <th>$1,000,000</th>
+                <th>100%</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

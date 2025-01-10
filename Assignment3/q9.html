@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    .vegetarian {
+      color: green;
+      font-weight: bold;
+    }
+    .ratings {
+      font-size: 1.2em;
+      color: #ffa500; /* Gold for stars */
+    }
+  </style>
+</head>
+<body>
+  <h1>Restaurant Menu</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Dish Name</th>
+        <th>Category</th>
+        <th>Ingredients</th>
+        <th>Price</th>
+        <th>Customer Ratings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Garden Salad <span class="vegetarian">🌱</span></td>
+        <td>Appetizer</td>
+        <td rowspan="2">Lettuce, Tomato, Cucumber</td>
+        <td>$7.99</td>
+        <td class="ratings">★★★☆☆</td>
+      </tr>
+      <tr>
+        <td>Vegetable Sandwich <span class="vegetarian">🌱</span></td>
+        <td>Main Course</td>
+        <td>$9.99</td>
+        <td class="ratings">★★★★☆</td>
+      </tr>
+      <tr>
+        <td>Grilled Chicken</td>
+        <td>Main Course</td>
+        <td>Chicken, Herbs, Lemon</td>
+        <td>$12.99</td>
+        <td class="ratings">★★★★★</td>
+      </tr>
+      <tr>
+        <td>Chocolate Cake</td>
+        <td>Dessert</td>
+        <td>Chocolate, Flour, Sugar</td>
+        <td>$6.99</td>
+        <td class="ratings">★★★★☆</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
